@@ -1,0 +1,1 @@
+A simple SMS log for OpenVBX.
