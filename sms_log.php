@@ -51,12 +51,10 @@ $nov = strtotime("first sunday", strtotime("nov 1 $yr")); // sunday after 11/1
 $isDST = time() > $mar && time() < $nov;
 		
 $timezone = PluginData::get("timezone",'UM8');
-	
+
 ?>
 
 <div class="vbx-plugin">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <script type="text/javascript" src="https://raw.github.com/DataTables/DataTables/master/media/js/jquery.dataTables.js"></script>
   <script type="text/javascript">
     function new_item(sms) {
       $('#table_body tr:first').before('<tr>'+call['From']+'</tr>');
@@ -69,9 +67,6 @@ $timezone = PluginData::get("timezone",'UM8');
       phone += parts[2] + "-" + parts[3];
       return phone;
     }
-    $(document).ready(function() {
-      $('#log').dataTable();
-    });
   </script>
 	
   <h3>Message Log</h3>
@@ -83,7 +78,7 @@ $timezone = PluginData::get("timezone",'UM8');
     </form>
   </div>
 
-  <table id="log">
+  <table id="log-table">
    <thead>
     <tr>
      <th>From</th>
