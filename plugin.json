@@ -1,0 +1,12 @@
+{
+    "name" : "SMS Log",
+    "author" : "Victor Quinn <mail@victorquinn.com>",
+    "description" : "Basic SMS log for OpenVBX",
+    "url" : "http://openvbx.org",
+    "links" : [{
+                        "menu" : "Logs",
+                        "url" : "sms_log",
+                        "script" : "sms_log.php",
+                        "label" : "SMS"
+                }]
+}
