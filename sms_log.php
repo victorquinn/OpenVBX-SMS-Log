@@ -11,6 +11,9 @@ require_once(APPPATH . 'libraries/twilio.php');
 
 $ci->twilio = new TwilioRestClient($ci->twilio_sid,$ci->twilio_token,$ci->twilio_endpoint);
 
+OpenVBX::addJS('jquery.dataTables.min.js');
+OpenVBX::addJS('static.js');
+
 if(isset($_GET['p'])) {
   $last = $_GET['p'];
 }
